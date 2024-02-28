@@ -1,0 +1,9 @@
+ticket_number = int(input("проверить, является ли билет счастливым."))
+thousands = ticket_number // 1000
+hundreds = (ticket_number % 1000)//1000
+tens = (ticket_number %100)//10
+untis = ticket_number % 10
+if thousands + hundreds == tens + untis:
+    print('+')
+else:
+    print('-')
