@@ -1,0 +1,21 @@
+def update_x(x, y, m, n):
+    """
+    Функция update_x принимает на вход четыре целых числа: x, y, m, n.
+    Если разность (x - y) меньше остатка от деления m на n, то увеличиваем x на 1.
+    Возвращает обновленное значение x.
+    """
+    difference = x - y
+    remainder = m % n
+    
+    if difference < remainder:
+        x += 1
+    
+    return x
+
+x = 1
+y = 4
+m = 8
+n = 2
+
+updated_x = update_x(x, y, m, n)
+print("Значение x после обновления:", updated_x)
