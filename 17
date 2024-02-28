@@ -1,0 +1,9 @@
+K = 7
+L = 7
+M = 14
+N = 77
+
+if L % K== 0 and M % K == 0 and N % K ==0:
+    print (True)
+else:
+    print(False)
